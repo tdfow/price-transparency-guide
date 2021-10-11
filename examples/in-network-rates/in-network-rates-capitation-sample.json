@@ -1,11 +1,19 @@
 {
   "reporting_entity_name": "medicare",
   "reporting_entity_type": "medicare",
-  "plan_name": "medicare",
-  "plan_id_type": "HIOS",
-  "plan_id": "12345XX9876543",
-  "plan_market_type": "individual",
+  "reporting_plans": [{
+    "plan_name": "medicaid",
+    "plan_id_type": "hios",
+    "plan_id": "11111111111",
+    "plan_market_type": "individual"
+  },{
+    "plan_name": "medicare",
+    "plan_id_type": "hios",
+    "plan_id": "0000000000",
+    "plan_market_type": "individual"
+  }],
   "last_updated_on": "2020-08-27",
+  "version": "1.0.0",
   "in_network": [{ 
     "negotiation_arrangement": "capitation",
     "name": "Primary Care Capitation",
@@ -14,22 +22,22 @@
       "negotiated_rate": 1400.00,
       "providers": [{
         "tin": "",
-        "service_code": "01",
+        "service_code": ["01","02","03"],
         "npi": ["6666666666", "7777777777", "8888888888", "9999999999"]
       },{
         "tin": "",
-        "service_code": "01",
+        "service_code": ["01","02","03"],
         "npi": ["1111111111", "2222222222", "3333333333", "4444444444"]
       }]
     },{
       "negotiated_rate": 2000.00,
       "providers": [{
         "tin": "",
-        "service_code": "02",
+        "service_code": ["01","02","03"],
         "npi": ["6666666666", "7777777777", "8888888888", "9999999999"]
       },{
         "tin": "",
-        "service_code": "02",
+        "service_code": ["01","02","03"],
         "npi": ["1111111111", "2222222222", "3333333333", "4444444444"]
       }]
     }],

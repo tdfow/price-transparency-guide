@@ -12,12 +12,19 @@ Background
 
 The Departments of the Treasury, Labor, and Health and Human Services (the Departments) have issued the Transparency in Coverage final rules (85 FR 72158) on November 12, 2020. The final rules require non-grandfathered group health plans and health insurance issuers in the individual and group markets (plans and issuers) to disclose certain pricing information. Under the final rules a plan or issuer must disclose in-network negotiated rates, billed and out-of-network allowed, and in-network drug prices (including both "negotiated rates" and "historical net prices") through three machine-readable files posted on an internet website.  
 
-Plans and issuers are required to make these files public for plan or policy years beginning on or after January 1, 2022.
+Plans and issuers are required to make these files public for plan or policy years beginning on or after July 1, 2022.
 
 Keeping Up To Date
 ==================
 
 Github allows for people to track and keep up-to-date with any changes for any repository. If you wish to follow and track the changes that happen on this repo, please leverage the "Watch" feature found at the top of the repository and select "All activity". This will email the user that has "watched" the specific repository.
+
+Guidance
+========
+
+Transparency in Coverage rule guidance is released on [CMS'](https://www.cms.gov) website. You can find recently released guidance here:
+* [https://www.cms.gov/CCIIO/Resources/Fact-Sheets-and-FAQs#Affordable_Care_Act](https://www.cms.gov/CCIIO/Resources/Fact-Sheets-and-FAQs#Affordable_Care_Act)
+* [https://www.cms.gov/CCIIO/Resources/Fact-Sheets-and-FAQs/Downloads/FAQs-Part-49.pdf](https://www.cms.gov/CCIIO/Resources/Fact-Sheets-and-FAQs/Downloads/FAQs-Part-49.pdf)
 
 Developer Documentation
 =======================
@@ -65,6 +72,7 @@ There are three required flat files associated with Transparency in Coverage:
 * In-Network Negotiated Rates
 * Out-Of-Network Allowed Amounts
 * In-Network Prescription Drugs
+  * NOTE: Per released guidance, the departments will defer enforcement of the TiC Final Rules’ requirement of the prescription drug pricing file pending further rulemaking.
 
 **In-Network Negotiated Rates File**
 Under the finalized rules, a plan or issuer must disclose in-network provider negotiated rates for all items and services through a machine-readable file.
@@ -116,3 +124,14 @@ The healthcare ecosystem is complex with what seems like an infinite amount of p
 * [Github Discussions](https://github.com/CMSgov/price-transparency-guide/discussions) - Use these channels for conversational topics (for example, "How do I&hellip;" or "What do you think about&hellip;" instead of bug reports or feature requests).
 
 Before posting a comment, issue, or question, please search through existing discussions and issues. There is a good chance that the topic in questions is already being discussed.
+
+Versioning
+==========
+
+With any type software development, progression happens through bug fixes, new content, or changing requirements. The technical development of this schema is no different. CMS will be following the standard versioning found in many software development projects with including a major, minor, and patch number to represent the current version of the schema. The following is the guiding principles for version updates:
+
+MAJOR version when incompatible changes are introduced,
+MINOR version when attributes/values are introduced or removed in a backwards compatible manner, and
+PATCH version when backwards compatible bug fixes are introduced.
+
+The major version will be finalized to 1.0.0 for the schema to adhere to the July 2022 implementation date. Versioning of the schema can be tracked in the VERSION.md file.

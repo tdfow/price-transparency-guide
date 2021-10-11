@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <plan_id>12345XX9876543</plan_id>
-  <plan_id_type>HIOS</plan_id_type>
-  <plan_market_type>individual</plan_market_type>
-  <plan_name>medicare</plan_name>
+  <reporting_plans>
+    <item>
+      <plan_id>11111111111</plan_id>
+      <plan_id_type>HIOS</plan_id_type>
+      <plan_market_type>individual</plan_market_type>
+      <plan_name>medicaid</plan_name>
+    </item>
+    <item>
+      <plan_id>00000000000</plan_id>
+      <plan_id_type>HIOS</plan_id_type>
+      <plan_market_type>individual</plan_market_type>
+      <plan_name>medicare</plan_name>
+    </item>
+  </reporting_plans>
   <reporting_entity_name>medicare</reporting_entity_name>
   <reporting_entity_type>medicare</reporting_entity_type>
   <last_updated_on>2020-08-27</last_updated_on>
+  <version>1.0.0</version>
   <in_network>
     <item>
       <negotiation_arrangement>capitation</negotiation_arrangement>
@@ -37,8 +48,12 @@
                 <item>8888888888</item>
                 <item>9999999999</item>
               </npi>
-              <service_code>01</service_code>
-              <tin />
+              <service_code>
+                <item>01</item>
+                <item>02</item>
+                <item>03</item>
+              </service_code>
+              <tin>22-2222222</tin>
             </item>
             <item>
               <npi>
@@ -47,8 +62,12 @@
                 <item>3333333333</item>
                 <item>4444444444</item>
               </npi>
-              <service_code>01</service_code>
-              <tin />
+              <service_code>
+                <item>01</item>
+                <item>02</item>
+                <item>03</item>
+              </service_code>
+              <tin>22-2222222</tin>
             </item>
           </providers>
         </item>
@@ -62,8 +81,12 @@
                 <item>8888888888</item>
                 <item>9999999999</item>
               </npi>
-              <service_code>02</service_code>
-              <tin />
+              <service_code>
+                <item>01</item>
+                <item>02</item>
+                <item>03</item>
+              </service_code>
+              <tin>22-2222222</tin>
             </item>
             <item>
               <npi>
@@ -72,8 +95,12 @@
                 <item>3333333333</item>
                 <item>4444444444</item>
               </npi>
-              <service_code>02</service_code>
-              <tin />
+              <service_code>
+                <item>01</item>
+                <item>02</item>
+                <item>03</item>
+              </service_code>
+              <tin>22-2222222</tin>
             </item>
           </providers>
         </item>
