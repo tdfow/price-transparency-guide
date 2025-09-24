@@ -1,17 +1,20 @@
 {
   "reporting_entity_name": "medicare",
   "reporting_entity_type": "medicare",
-  "version": "1.4.0",
+  "version": "2.0.0",
+  "last_updated_on": "2025-09-24",
   "reporting_structure": [
     {
       "reporting_plans": [
         {
+          "issuer_name": "issuer Name A",
           "plan_name": "medicaid",
           "plan_id_type": "hios",
           "plan_id": "1111111111",
           "plan_market_type": "individual"
         },
         {
+          "issuer_name": "issuer name B",
           "plan_name": "medicare",
           "plan_id_type": "hios",
           "plan_id": "000000000",
@@ -36,6 +39,7 @@
     {
       "reporting_plans": [
         {
+          "issuer_name": "Issuer Name C",
           "plan_name": "chip",
           "plan_id_type": "hios",
           "plan_id": "3333333333",
